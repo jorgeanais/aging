@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+  <title>Recogiendo el carnet</title>
+</head>
+<body>
+  <div class="container m-5">
+    <div class="row">
+      <div class="col-md-4">
+        <a href="/"><img src="/static/img/aging.png" class="rounded mx-auto d-block" alt="Aging"></a>
+      </div>
+      <div class="col-md-8">
+        <div class="alert alert-info" role="alert">
+          Bienvenido a Recogiendo el carnet, por favor introduzca su rut sin guión, ni puntos, ni dígito verificador.
+        </div>
+        <form action="/predictor" method="post">
+        <div class="form-group">
+          <label for="x_input">Valor</label>
+          <input type="text" class="form-control" placeholder="0" id="run_input" name="run_input">
+
+        </div>
+        <button type="submit" class="btn btn-primary" id="predecir">Predecir</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="/static/js/jquery-3.4.1.min.js"></script>
+  <script src="/static/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
